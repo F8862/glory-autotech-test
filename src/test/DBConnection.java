@@ -2,6 +2,7 @@ package test;
 import java.sql.*;
 public class DBConnection {
 	private static Connection con;
+
 	private DBConnection(){}
 	static{
 		try{

@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
             sct.removeAttribute("Name");
             out.print("You are successfully logged in!");  
             out.print("<br>Welcome, "+Name);  
-            request.getRequestDispatcher("dashboard.html").forward(request, response);  
+            request.getRequestDispatcher("link.html").forward(request, response);  
         }else{  
             out.print("sorry, please check your userName or password!");  
             request.getRequestDispatcher("login.html").include(request, response);  
